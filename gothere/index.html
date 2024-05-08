@@ -6,6 +6,9 @@
 
     <script>
     function myFunction() {
+        if (!(txtJob.value.startsWith('https://'))) {
+            txtJob.value = 'https://' + txtJob.value
+        }
         window.location.href = txtJob.value;
     }
     </script>
